@@ -1,0 +1,200 @@
+@import '../variables';
+
+.footer {
+    background-color: #262626;
+    padding-top: 46px;
+    display: grid;
+    grid-template-rows: 280px 10px 68px;
+
+    .footerMain {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #footerLine {
+        border-bottom: 1px solid white;
+        width: 100%;
+        grid-row: 2/3;
+        opacity: 0.3;
+    }
+}
+
+.telloSocial {
+    @include flex(left, left);
+    flex-direction: column;
+    grid-column: 1/2;
+    .telloDiv {
+        @include flex(left, center);
+        gap: 15px;
+        margin-bottom: 26px;
+        img {
+            width: 44px;
+            height: 48px;
+        }
+        h5 {
+            color: $mainGreen;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 40px;
+        }
+    }
+    .socials {
+        @include flex(left, center);
+        gap: 13%;
+        & img {
+            color: white;
+            opacity: 0.8;
+        }
+    }
+};
+
+
+.menuDiv {
+    @include flex(left, left);
+    flex-direction: column;
+    gap: 16px;
+    grid-column: 2/3;
+    & :first-child {
+        margin-bottom: 20px;
+    }
+    .footmenu {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: white;
+    }
+    a:not(:first-child) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.8;
+        color: white;
+    }
+}
+
+
+.helpDiv {
+    @include flex(left, left);
+    flex-direction: column;
+    gap: 16px;
+    grid-column: 3/4;
+    & :first-child {
+        margin-bottom: 20px;
+    }
+    .foothelp {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: white;
+    }
+    a:not(:first-child) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.8;
+        color: white;
+    }
+}
+
+
+.connectDiv {
+    @include flex(left, left);
+    flex-direction: column;
+    gap: 16px;
+    grid-column: 4/5;
+    // &  :first-child {
+    //     margin-bottom: 20px;
+    // }
+    & div {
+        @include flex(left, center);
+        gap: 20px;
+    }
+    & p {
+        color: white;
+        opacity: 0.8;
+    }
+    .footConnect {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .locationDiv > p {
+        color: $mainGreen;
+    }
+}
+
+.footerEnd {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    width: 90%;
+    margin: 0 auto;
+    @include flex(space-between, center);
+    color: white;
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    .copyright {
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .rules {
+        color: white;
+        display: flex;
+        gap: 40px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+    .footer {
+        padding-top: unset;
+        grid-template-rows: 933px 1px 68px;
+        .footerMain {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            .telloSocial {
+                grid-row: 1/2;
+                grid-column: 1/2;
+                @include flex(center, center);
+                .socials {
+                    gap: 37px;
+                }
+            }
+            .menuDiv {
+                grid-row: 2/3;
+                grid-column: 1/2;
+                @include flex(center, center);
+            }
+            .helpDiv {
+                grid-row: 3/4;
+                grid-column: 1/2;
+                @include flex(center, center);
+            }
+            .connectDiv {
+                grid-row: 4/5;
+                grid-column: 1/2;
+                @include flex(center, left);
+                padding:0px 10px
+            }
+        }
+    }
+
+    .footerEnd {
+        @include flex(space-between, center);
+        flex-direction: column-reverse;
+    }
+
+
+
+
+
+
+}

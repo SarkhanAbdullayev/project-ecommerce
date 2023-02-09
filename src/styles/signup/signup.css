@@ -1,0 +1,234 @@
+.signup {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.signup .signupContent {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  width: 312px;
+  flex-direction: column;
+}
+.signup .signupContent .signupTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4F4F4F;
+  margin-bottom: 32px;
+  margin-top: 95px;
+}
+.signup .signupContent .withSocials {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+.signup .signupContent .withSocials .facebook {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.signup .signupContent .withSocials .facebook .facebookImgDiv {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #4267B2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup .signupContent .withSocials .facebook p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #4F4F4F;
+}
+.signup .signupContent .withSocials .google {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.signup .signupContent .withSocials .google .googleImgdiv {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #DB4437;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup .signupContent .withSocials .google p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #4F4F4F;
+}
+.signup .signupContent .or {
+  font-size: 12px;
+  line-height: 16px;
+  color: #BDBDBD;
+  margin-bottom: 24px;
+}
+.signup .signupContent .signupForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.signup .signupContent .signupForm .label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F4F4F;
+  margin-bottom: 8px;
+}
+.signup .signupContent .signupForm .input {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #F2F2F2;
+  margin-bottom: 24px;
+  padding-left: 16px;
+}
+.signup .signupContent .signupForm .MobNumberDiv {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  height: 48px;
+}
+.signup .signupContent .signupForm .MobNumberDiv input {
+  margin-bottom: unset;
+  border-top-left-radius: none;
+  border-bottom-left-radius: none;
+}
+.signup .signupContent .signupForm .showPassword {
+  position: absolute;
+  right: 12px;
+  top: 345px;
+  cursor: pointer;
+}
+.signup .signupContent .signupForm .rulesDiv {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+.signup .signupContent .signupForm .rulesDiv .checkDiv > .checkImg {
+  display: none;
+}
+.signup .signupContent .signupForm .rulesDiv .rulesCheck {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  background-color: red;
+}
+.signup .signupContent .signupForm .rulesDiv .rulesCheck:hover ~ .checkDiv {
+  box-shadow: 0px 0px 13px #699889;
+  scale: 1.1;
+  transition: 350ms;
+}
+.signup .signupContent .signupForm .rulesDiv .rulesCheck:checked ~ .checkDiv {
+  background-color: #2DD06E;
+}
+.signup .signupContent .signupForm .rulesDiv .rulesCheck:checked ~ .checkDiv > .checkImg {
+  display: flex;
+}
+.signup .signupContent .signupForm .rulesDiv .checkDiv {
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 214, 143, 0.16);
+  border: 1px solid #2DD06E;
+  border-radius: 3px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup .signupContent .signupForm .rulesDiv .checkDiv img {
+  color: red;
+  opacity: 1;
+}
+.signup .signupContent .signupForm .rulesDiv .rules {
+  font-size: 12px;
+  line-height: 16px;
+  color: #2D9CDB;
+}
+.signup .signupContent .signupForm .rulesDiv .agree {
+  font-size: 12px;
+  line-height: 16px;
+  color: #4F4F4F;
+}
+.signup .signupContent .signupForm .submitBtn {
+  width: 100%;
+  height: 48px;
+  background-color: #00D68F;
+  border: 2px solid #00D68F;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 176px;
+  transition: 250ms;
+}
+.signup .signupContent .signupForm .submitBtn:hover {
+  background-color: white;
+  color: #00D68F;
+  font: 15px;
+}
+.signup .signupContent .signupForm .errorMsgDiv {
+  height: 0px;
+}
+.signup .signupContent .signupForm .errorMsgDiv p {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: crimson;
+}
+.signup .goToSignup {
+  width: 440px;
+  position: relative;
+}
+.signup .goToSignup .bgGrid {
+  margin-bottom: 35px;
+}
+.signup .goToSignup .signupP {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F4F4F;
+  text-align: center;
+}
+.signup .goToSignup .signupP .signupLink {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2D9CDB;
+}
+
+@media screen and (max-width: 500px) {
+  .signup {
+    flex-direction: column;
+  }
+  .signup .signupContent {
+    width: 90%;
+  }
+  .signup .signupContent .signupTitle {
+    margin-top: 72px;
+  }
+  .signup .signupContent .signupForm .submitBtn {
+    margin-bottom: 26px;
+  }
+  .signup .goToSignup {
+    margin-bottom: 90px;
+    width: unset;
+  }
+  .signup .goToSignup .bgGrid {
+    display: none;
+  }
+}/*# sourceMappingURL=signup.css.map */

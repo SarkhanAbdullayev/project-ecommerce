@@ -1,0 +1,207 @@
+.footer {
+  background-color: #262626;
+  padding-top: 46px;
+  display: grid;
+  grid-template-rows: 280px 10px 68px;
+}
+.footer .footerMain {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer #footerLine {
+  border-bottom: 1px solid white;
+  width: 100%;
+  grid-row: 2/3;
+  opacity: 0.3;
+}
+
+.telloSocial {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  grid-column: 1/2;
+}
+.telloSocial .telloDiv {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 26px;
+}
+.telloSocial .telloDiv img {
+  width: 44px;
+  height: 48px;
+}
+.telloSocial .telloDiv h5 {
+  color: #00D68F;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+}
+.telloSocial .socials {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 13%;
+}
+.telloSocial .socials img {
+  color: white;
+  opacity: 0.8;
+}
+
+.menuDiv {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  gap: 16px;
+  grid-column: 2/3;
+}
+.menuDiv :first-child {
+  margin-bottom: 20px;
+}
+.menuDiv .footmenu {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+}
+.menuDiv a:not(:first-child) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.8;
+  color: white;
+}
+
+.helpDiv {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  gap: 16px;
+  grid-column: 3/4;
+}
+.helpDiv :first-child {
+  margin-bottom: 20px;
+}
+.helpDiv .foothelp {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+}
+.helpDiv a:not(:first-child) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.8;
+  color: white;
+}
+
+.connectDiv {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  gap: 16px;
+  grid-column: 4/5;
+}
+.connectDiv div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+.connectDiv p {
+  color: white;
+  opacity: 0.8;
+}
+.connectDiv .footConnect {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+.connectDiv .locationDiv > p {
+  color: #00D68F;
+}
+
+.footerEnd {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footerEnd .copyright {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.footerEnd .rules {
+  color: white;
+  display: flex;
+  gap: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    padding-top: unset;
+    grid-template-rows: 933px 1px 68px;
+  }
+  .footer .footerMain {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .footer .footerMain .telloSocial {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footerMain .telloSocial .socials {
+    gap: 37px;
+  }
+  .footer .footerMain .menuDiv {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footerMain .helpDiv {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footerMain .connectDiv {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding: 0px 10px;
+  }
+  .footerEnd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}/*# sourceMappingURL=footer.css.map */

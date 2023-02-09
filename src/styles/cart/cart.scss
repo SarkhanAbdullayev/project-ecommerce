@@ -1,0 +1,271 @@
+@import '../variables';
+
+.counterLoaderDiv {
+    width: 80px;
+    @include flex(center,center)
+}
+
+.gridLoader {
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    box-shadow: 11110px 1110px 10000px #656565;
+}
+
+.cart {
+    background-color: #E5E5E5;
+    padding: 40px 0;
+    min-height: 800px;
+    .cartItemsCount {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #4F4F4F;
+        margin-left: 5%;
+        margin-bottom: 30px;
+    }
+    .cartContent {
+        width: 90%;
+        background-color: #E5E5E5;
+        margin: 0 auto;
+        @include flex(space-between, flex-start);
+        .items {
+            width: 70%;
+        }
+    }
+}
+
+.items {
+    .item {
+        width: 100%;
+        height: 104px;
+        background-color: white;
+        border-radius: 8px;
+        @include flex(space-between, center);
+        padding: 0 15px;
+        margin-bottom: 32px;
+        .imgDiv {
+            width: 72px;
+            height: 72px;
+            @include flex(center,center);
+            img {
+                height: 100%;
+            }
+        }
+        .info {
+            height: 72px;
+            width: 55%;
+            @include flex(space-around, left);
+            flex-direction: column;
+            .name {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: $gray1;
+            }
+            .colorPrice {
+                @include flex(left, center);
+                gap: 32px;
+                .color {
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $gray3;
+                    span {
+                        color: $gray1;
+                    }
+                }
+                .price {
+                    color: $danger;
+                }
+            }
+        }
+        .counter {
+            width: 80px;
+            height: 20px;
+            @include flex(space-between,center);
+            .decrement {
+                width: 9px;
+                height: 9px;
+                border-radius: 100%;
+                background-image: url('../../assets/cart/decrement.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                cursor: pointer;
+            }
+            .increment {
+                width: 9px;
+                height: 9px;
+                border-radius: 100%;
+                background-image: url('../../assets/cart/increment.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                cursor: pointer;
+            }
+        }
+        .deleteDiv {
+            width: 35px;
+            @include flex(center,center);
+            .delete {
+                width: 18px;
+                height: 20px;
+                background-image: url('../../assets/cart/delete.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.emptyCart {
+    @include flex(center, center);
+    flex-direction: column;
+    gap: 45px;
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: 40px;
+    .shoppingImg {
+        width: 100px;
+        height: 100px;
+    }
+    .emptryP {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #BDBDBD;
+    }
+    .continueShopping {
+        width: 280px;
+        height: 48px;
+        background-color: $mainGreen;
+        border-radius: 8px;
+        color: white;
+        @include flex(center,center);
+    }
+}
+
+.totalContent {
+    width: 25%;
+    .total {
+        width: 100%;
+        height: 309px;
+        @include flex(space-evenly,unset);
+        flex-direction: column;
+        padding: 0 24px;
+        background-color: white;
+        border-radius: 16px;
+        margin-bottom: 20px;
+        .totalH3 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            color: #1D2123;
+            text-align: left;
+        }
+        & > div {
+            width: 100%;
+            @include flex(space-between,center);
+            & > p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $gray1;
+            }
+        }
+        .line {
+            border-bottom: 1px solid $gray3;
+        }
+        .sum {
+            h5 {
+                font-weight: 500;
+            }
+            p {
+                font-weight: 500;
+                color: $danger;
+            }
+        }
+    }
+    #passToCheckout {
+        width: 100%;
+        height: 48px;
+        border: 2px solid $mainGreen;
+        border-radius: 8px;
+        background-color: $mainGreen;
+        color: white;
+        transition: 350ms;
+        &:hover {
+            background-color: white;
+            color: $mainGreen;
+        }
+    }
+}
+
+
+@media screen and (max-width : '500px') {
+
+    .counterLoader {
+        position: absolute;
+        bottom: 15px;
+        right: 42px;
+    }
+
+    .gridLoader {
+        margin-left: -20px;
+    }
+    .cart {
+        .cartContent {
+            
+            flex-direction: column;
+            .items {
+                width: 100%;
+                .item {
+                    height: 330px;
+                    flex-direction: column;
+                    padding: 24px;
+                    position: relative;
+                    justify-content: space-evenly;
+                    .imgDiv {
+                        height: 50%;
+                        width: 50%;
+                    }
+                    .info {
+                        width: 90%;
+                        .name {
+                            text-align: center;
+                            margin-bottom: 12px;
+                        }
+                        .colorPrice {
+                            flex-direction: column;
+                            align-self: flex-start;
+                            gap: 13px;
+                        }
+                    }
+                    .counter {
+                        position: absolute;
+                        bottom: 25px;
+                        right: 25px;
+                    }
+                    .delete {
+                        position: absolute;
+                        right: 25px;
+                        top: 25px;
+                    }
+                }
+            }
+            .totalContent {
+                width: 100%;
+                .total {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    
+}

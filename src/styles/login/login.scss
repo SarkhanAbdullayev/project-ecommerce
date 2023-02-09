@@ -1,0 +1,160 @@
+@import '../variables';
+
+
+.login {
+    @include flex(space-evenly,center);
+    
+    .loginContent {
+        @include flex(unset, center);
+        width: 312px;
+        flex-direction: column;
+        .loginTitle {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            color: $gray2;
+            margin-bottom: 32px;
+            margin-top: 95px;
+        }
+        .withSocials {
+            @include flex(unset,center);
+            margin-bottom: 24px;
+            width: 100%;
+            .facebook {
+                width: 50%;
+                @include flex(center,center);
+                gap: 8px;
+                .facebookImgDiv {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 100%;
+                    background-color: #4267B2;
+                    @include flex(center,center);
+                }
+                p {
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $gray2;
+                }
+            }
+            .google {
+                width: 50%;
+                @include flex(center,center);
+                gap: 8px;
+                .googleImgdiv {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 100%;
+                    background-color: #DB4437;
+                    @include flex(center,center);
+                }
+                p {
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $gray2;
+                }
+            }
+        }
+        .or {
+            font-size: 12px;
+            line-height: 16px;
+            color: $gray4;
+            margin-bottom: 24px;
+        }
+        .loginForm {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+            .emailLabel, .passwordLabel {
+                font-size: 14px;
+                line-height: 20px;
+                color: $gray2;
+                margin-bottom: 8px;
+            }
+            .email , .password {
+                width: 100%;
+                height: 48px;
+                border-radius: 8px;
+                background-color: $gray6;
+                margin-bottom: 24px;
+                padding-left: 16px;
+            }
+            .showPassword {
+                position: absolute;
+                right: 12px;
+                top: 145px;
+                cursor: pointer;
+            }
+            .forgetPassword {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #2D9CDB;
+                margin-top: -16px;
+                align-self: flex-end;
+                margin-bottom: 48px;
+            }
+            .submitBtn {
+                width: 100%;
+                height: 48px;
+                background-color: $mainGreen;
+                border: 2px solid $mainGreen;
+                border-radius: 8px;
+                color: white;
+                margin-bottom: 178px;
+                transition: 250ms;
+                &:hover {
+                    background-color: white;
+                    color: $mainGreen;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .goToSignup {
+        width: 440px;
+        position: relative;
+        .bgGrid {
+            margin-bottom: 35px;
+        }
+        .signupP {
+            font-size: 14px;
+            line-height: 20px;
+            color: $gray2;
+            text-align: center;
+            .signupLink {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: $blueLink;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: '500px'){
+    .login {
+        flex-direction: column;
+        .loginContent {
+            width: 90%;
+            .loginTitle {
+                margin-top: 72px;
+            }
+            .loginForm {
+                .submitBtn {
+                    margin-bottom: 26px;
+                }
+            }
+        }
+        .goToSignup {
+            margin-bottom: 90px;
+            width: unset;
+            .bgGrid {
+                display: none;
+            }
+        }
+    }
+}

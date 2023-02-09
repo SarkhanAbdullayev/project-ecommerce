@@ -1,0 +1,166 @@
+.login {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.login .loginContent {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  width: 312px;
+  flex-direction: column;
+}
+.login .loginContent .loginTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4F4F4F;
+  margin-bottom: 32px;
+  margin-top: 95px;
+}
+.login .loginContent .withSocials {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+.login .loginContent .withSocials .facebook {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.login .loginContent .withSocials .facebook .facebookImgDiv {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #4267B2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .loginContent .withSocials .facebook p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #4F4F4F;
+}
+.login .loginContent .withSocials .google {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.login .loginContent .withSocials .google .googleImgdiv {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #DB4437;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .loginContent .withSocials .google p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #4F4F4F;
+}
+.login .loginContent .or {
+  font-size: 12px;
+  line-height: 16px;
+  color: #BDBDBD;
+  margin-bottom: 24px;
+}
+.login .loginContent .loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.login .loginContent .loginForm .emailLabel, .login .loginContent .loginForm .passwordLabel {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F4F4F;
+  margin-bottom: 8px;
+}
+.login .loginContent .loginForm .email, .login .loginContent .loginForm .password {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #F2F2F2;
+  margin-bottom: 24px;
+  padding-left: 16px;
+}
+.login .loginContent .loginForm .showPassword {
+  position: absolute;
+  right: 12px;
+  top: 145px;
+  cursor: pointer;
+}
+.login .loginContent .loginForm .forgetPassword {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2D9CDB;
+  margin-top: -16px;
+  align-self: flex-end;
+  margin-bottom: 48px;
+}
+.login .loginContent .loginForm .submitBtn {
+  width: 100%;
+  height: 48px;
+  background-color: #00D68F;
+  border: 2px solid #00D68F;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 178px;
+  transition: 250ms;
+}
+.login .loginContent .loginForm .submitBtn:hover {
+  background-color: white;
+  color: #00D68F;
+  font-size: 15px;
+}
+.login .goToSignup {
+  width: 440px;
+  position: relative;
+}
+.login .goToSignup .bgGrid {
+  margin-bottom: 35px;
+}
+.login .goToSignup .signupP {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F4F4F;
+  text-align: center;
+}
+.login .goToSignup .signupP .signupLink {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2D9CDB;
+}
+
+@media screen and (max-width: 500px) {
+  .login {
+    flex-direction: column;
+  }
+  .login .loginContent {
+    width: 90%;
+  }
+  .login .loginContent .loginTitle {
+    margin-top: 72px;
+  }
+  .login .loginContent .loginForm .submitBtn {
+    margin-bottom: 26px;
+  }
+  .login .goToSignup {
+    margin-bottom: 90px;
+    width: unset;
+  }
+  .login .goToSignup .bgGrid {
+    display: none;
+  }
+}/*# sourceMappingURL=login.css.map */

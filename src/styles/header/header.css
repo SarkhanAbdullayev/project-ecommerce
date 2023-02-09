@@ -1,0 +1,317 @@
+.header {
+  height: 110px;
+  border-bottom: 1px solid #2DD06E;
+  display: flex;
+  flex-direction: column;
+}
+.header .headerMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+.header .categories {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  gap: 30px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+.header .categories > * {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.image-gallery-icon {
+  background-color: red;
+}
+
+.menu, .checkbox, .burger {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  display: none;
+}
+
+.telloBox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.telloBox .telloImg {
+  width: 43.5px;
+  height: 48px;
+  margin-right: 15.5px;
+}
+.telloBox .telloText {
+  color: #00D68F;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.searchDiv {
+  width: 45%;
+  height: 40px;
+  position: relative;
+  margin: auto;
+}
+.searchDiv .searchSvg {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  z-index: 4;
+}
+.searchDiv .search {
+  width: 100%;
+  height: 100%;
+  background: #F2F2F2;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  padding-left: 56px;
+  z-index: 3;
+  position: relative;
+}
+.searchDiv .searchedProducts {
+  width: 100%;
+  z-index: 2;
+  border: 1px solid #F5F5F5;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  position: absolute;
+  top: 88%;
+  background-color: white;
+  display: block;
+  transition: 350ms ease-in-out;
+}
+.searchDiv .searchedProducts .historyDiv {
+  width: 90%;
+  margin: 24px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c5c5c5;
+  padding-bottom: 5px;
+  background-color: white;
+}
+.searchDiv .searchedProducts .historyDiv .lastSearch {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F4F4F;
+}
+.searchDiv .searchedProducts .historyDiv .clearBtn {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+}
+.searchDiv .searchedProducts .history {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.searchDiv .searchedProducts .history .keyword {
+  background: #EDF1F7;
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: #4F4F4F;
+  cursor: pointer;
+  transition: 200ms;
+}
+.searchDiv .searchedProducts .history .keyword:hover {
+  background: #d2d4d5;
+}
+.searchDiv .searchedProducts .productList {
+  width: 90%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.searchDiv .searchedProducts .productList .item {
+  width: 100%;
+  min-width: 150px;
+  height: 80px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 5px;
+  gap: 16px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  transition: 350ms;
+}
+.searchDiv .searchedProducts .productList .item:hover {
+  scale: 1.05;
+}
+.searchDiv .searchedProducts .productList .item .itemImg {
+  height: -webkit-fill-available;
+  border-radius: 4px;
+}
+.searchDiv .searchedProducts .productList .item .itemInfo {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 10px;
+}
+.searchDiv .searchedProducts .productList .item .itemInfo h5 {
+  font-size: 15px;
+  font-weight: 500;
+  overflow: hidden !important;
+  white-space: nowrap;
+  max-height: 20%;
+}
+.searchDiv .searchedProducts .productList .item .itemInfo p {
+  font-size: 14px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 28px;
+}
+.navigation .naviCon {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navigation .naviCon .naviConImg {
+  width: 100%;
+  height: 100%;
+}
+.navigation .itemCount {
+  background-color: #00D68F;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -15px;
+}
+.navigation .itemCount p {
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .headerMain {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .headerMain .telloBox {
+    width: 40%;
+  }
+  .headerMain .navigation {
+    width: 40%;
+    position: relative;
+    gap: 15px;
+  }
+  .headerMain .navigation .itemCount {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+  }
+  .headerMain .navigation .itemCount p {
+    color: white;
+  }
+  .searchDiv {
+    order: 1;
+    width: 100%;
+  }
+  .header .categories {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px 5%;
+    transition: 300ms ease-in-out;
+    transform: translateX(-100%);
+    z-index: 10;
+    min-height: 450px;
+  }
+  .header .categories > a {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: black;
+  }
+  .burger {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    margin-right: 30px;
+  }
+  .burger .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .burger .hamburger-lines {
+    height: 26px;
+    width: 32px;
+    position: block;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .burger .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+  .burger .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .burger .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  .burger .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .burger input[type=checkbox]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  .burger input[type=checkbox]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  .burger input[type=checkbox]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+}/*# sourceMappingURL=header.css.map */

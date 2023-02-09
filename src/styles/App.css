@@ -1,0 +1,23 @@
+* {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #333333;
+}
+
+/** Fonts */
+@font-face {
+  font-family: "euclid";
+  font-style: normal;
+  src: url(../fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf);
+}
+
+
+.App {
+  background-color: white;
+}
+
+

@@ -1,0 +1,372 @@
+* .css-16r9pk3 {
+  width: 70%;
+  max-width: none !important;
+}
+* .css-14sza3e-MuiStepLabel-root {
+  flex-direction: row-reverse;
+}
+* .css-14yr603-MuiStepContent-root {
+  border-left: none;
+}
+* .css-8t49rw-MuiStepConnector-line {
+  border: none !important;
+}
+* .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+  fill: rgb(250, 250, 250) !important;
+  border: 1px solid #909090;
+  border-radius: 100%;
+}
+* .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  fill: rgb(255, 255, 255) !important;
+  border: 2px solid #2DD06E;
+  border-radius: 100%;
+}
+* .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+  fill: #2DD06E !important;
+  border: 1px solid #2DD06E;
+  border-radius: 100%;
+}
+* .css-117w1su-MuiStepIcon-text {
+  fill: #909090 !important;
+}
+* .css-117w1su-MuiStepIcon-text.Mui-active {
+  fill: #2DD06E !important;
+}
+
+.checkout {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 13%;
+  padding-top: 50px;
+  margin-bottom: 120px;
+}
+.checkout .box .title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1D2123;
+}
+.checkout .box .stepper .step {
+  border-left: none;
+  border-top: 1px solid black;
+}
+.checkout .box .stepper .step .stepLabel {
+  margin-top: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.checkout .box .stepper .step .stepLabel .stepLabelTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  margin-bottom: 24px;
+}
+.checkout .box .stepper .step .stepLabel .stepLabelTitle .edit {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D9CDB;
+}
+.checkout .box .finishStep {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout .box .finishStep .finish {
+  width: 250px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid #00D68F;
+  color: white;
+  background-color: #00D68F;
+  transition: 400ms;
+}
+.checkout .box .finishStep .finish:hover {
+  color: #00D68F;
+  background-color: white;
+}
+.checkout .box .finishStep .checkoutForm {
+  display: flex;
+  flex-direction: column;
+  background-color: #00D68F;
+  border-radius: 8px;
+  width: 400px;
+  gap: 5px;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0px 19px 20px rgba(89, 141, 55, 0.78);
+}
+.checkout .box .finishStep .checkoutForm label {
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+.checkout .box .finishStep .checkoutForm .cardNumber, .checkout .box .finishStep .checkoutForm .cvcInput {
+  height: 40px;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  transition: 350ms;
+}
+.checkout .box .finishStep .checkoutForm .expiryInputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout .box .finishStep .checkoutForm .expiryInputs .expiryMonth, .checkout .box .finishStep .checkoutForm .expiryInputs .expiryYear {
+  width: 47%;
+  letter-spacing: 1.5px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-weight: 500;
+  transition: 350ms;
+}
+.checkout .box .finishStep .captureOrderBtn {
+  width: 250px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid #00D68F;
+  background-color: #00D68F;
+  color: white;
+  transition: 350ms;
+  margin: 0 auto;
+  box-shadow: 0px 9px 10px rgba(135, 192, 97, 0.78);
+}
+.checkout .box .finishStep .captureOrderBtn:hover {
+  background-color: white;
+  color: #00D68F;
+}
+.checkout input::-webkit-outer-spin-button, .checkout input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.checkout .total {
+  width: 25%;
+  height: 309px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: unset;
+  flex-direction: column;
+  padding: 0 24px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0px 4px 32px rgba(130, 130, 130, 0.08);
+}
+.checkout .total > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout .total > div > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+.checkout .total .totalH3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1D2123;
+  text-align: left;
+}
+.checkout .total .line {
+  border-bottom: 1px solid #828282;
+}
+.checkout .total .sum h5 {
+  font-weight: 500;
+}
+.checkout .total .sum p {
+  font-weight: 500;
+  color: #DB2C66;
+}
+
+.stepContent .infoForm {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.stepContent .infoForm .inputDiv {
+  width: 45%;
+  min-width: 250px;
+}
+.stepContent .infoForm .inputDiv .label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F4F4F;
+  margin-bottom: 8px;
+}
+.stepContent .infoForm .inputDiv .input {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #F2F2F2;
+  margin-bottom: 24px;
+  padding-left: 16px;
+}
+.stepContent .infoForm .inputDiv .errorMsgDiv {
+  height: 0px;
+}
+.stepContent .infoForm .inputDiv .errorMsgDiv p {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: crimson;
+}
+.stepContent .deliveryForm {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+}
+.stepContent .deliveryForm .inputDiv {
+  width: 45%;
+  min-width: 250px;
+}
+.stepContent .deliveryForm .inputDiv .label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F4F4F;
+  margin-bottom: 8px;
+}
+.stepContent .deliveryForm .inputDiv .input {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #F2F2F2;
+  margin-bottom: 24px;
+  padding-left: 16px;
+}
+.stepContent .deliveryForm .inputDiv .errorMsgDiv {
+  height: 0px;
+}
+.stepContent .deliveryForm .inputDiv .errorMsgDiv p {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: crimson;
+}
+.stepContent .deliveryForm .deliveryInputDiv {
+  width: 100%;
+  min-height: 80px;
+  margin-bottom: 40px;
+}
+.stepContent .deliveryForm .deliveryInputDiv input {
+  min-height: 80%;
+}
+.stepContent .saveInputs {
+  width: 176px;
+  height: 48px;
+  border: 2px solid #00D68F;
+  background-color: #00D68F;
+  border-radius: 8px;
+  color: white;
+  transition: 350ms;
+}
+.stepContent .saveInputs:hover {
+  background-color: white;
+  color: #00D68F;
+}
+
+.paymentContent {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+}
+.paymentContent .payVariants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.paymentContent .payVariants .cash, .paymentContent .payVariants .card {
+  width: 248px;
+  height: 48px;
+  background-color: white;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  transition: 350ms;
+}
+.paymentContent .payVariants .cash > p, .paymentContent .payVariants .card > p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.paymentContent .confirm {
+  width: 176px;
+  height: 48px;
+  background-color: #00D68F;
+  border: 2px solid #00D68F;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  transition: 350ms;
+}
+.paymentContent .confirm:hover {
+  background-color: white;
+  color: #00D68F;
+}
+
+.confirmed {
+  border: 1px solid #828282 !important;
+  background-color: #F2F2F2 !important;
+}
+
+@media screen and (max-width: 500px) {
+  .checkout {
+    flex-direction: column;
+  }
+  .checkout .box {
+    width: 100%;
+  }
+  .checkout .box .stepper .step .stepContentDiv {
+    margin: 0;
+    padding: 0;
+  }
+  .checkout .box .stepper .step .stepContentDiv .saveInputs {
+    width: 100%;
+  }
+  .checkout .total {
+    width: 100%;
+  }
+  .stepContent .infoForm .inputDiv {
+    width: 100%;
+  }
+  .stepContent .deliveryForm .inputDiv {
+    width: 100%;
+  }
+  .paymentContent .payVariants {
+    flex-direction: column;
+  }
+  .paymentContent .confirm {
+    width: 100%;
+  }
+  .checkout .box .finishStep .checkoutForm {
+    width: 350px;
+  }
+}/*# sourceMappingURL=checkout.css.map */

@@ -1,0 +1,178 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-indicators > button[type=button] {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #E0E0E0;
+}
+
+.carousel-indicators > button[type=button].active {
+  background-color: #00D68F;
+}
+
+.sliderImgDiv img {
+  margin: 0 auto;
+}
+
+.taksit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 50px auto;
+}
+.taksit > div {
+  box-shadow: 0px 19px 20px rgba(191, 212, 178, 0.78);
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #F6F6F6;
+  width: 48%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.taksit > div h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.taksit > div h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.taksit > div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(166, 164, 164);
+  margin-bottom: 15px;
+}
+.taksit > div .indiAl {
+  width: 100px;
+  height: 35px;
+  border: 1px solid rgb(154, 154, 154);
+  border-radius: 30px;
+}
+
+.services {
+  width: 90%;
+  margin: 110px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services > div {
+  width: 30%;
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+}
+.services > div img {
+  width: 64px;
+  height: 66px;
+  margin-bottom: 47px;
+}
+.services > div h5 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+.services > div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.brends {
+  width: 90%;
+  margin: 0 auto;
+}
+.brends .swiper {
+  width: 100%;
+}
+.brends .swiper .swiper-wrapper {
+  width: 100%;
+}
+.brends .swiper .swiper-wrapper .swiper-slide {
+  width: 176px !important;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brends .swiper .swiper-wrapper .swiper-slide img {
+  width: 128px;
+  color: #aa00ff;
+}
+
+@media screen and (max-width: 500px) {
+  .carousel-item {
+    height: 550px;
+  }
+  .productsList .contents {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 30px 20px;
+  }
+  .productsList .contents .listContent {
+    height: 300px;
+    width: 200px;
+  }
+  .productsList .contents .listContent .imgDiv img {
+    max-width: unset;
+  }
+  .taksit {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .taksit > div {
+    width: 100%;
+  }
+  .taksit > div .productImg {
+    width: 60%;
+  }
+  .taksit > div h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  .taksit > div h4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .taksit > div p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(166, 164, 164);
+    margin-bottom: 8px;
+  }
+  .taksit > div .indiAl {
+    font-size: 14px;
+    width: 80px;
+    height: 25px;
+    border: 1px solid rgb(154, 154, 154);
+    border-radius: 25px;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .services > div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .Homepage .brends {
+    display: none;
+  }
+}/*# sourceMappingURL=Homepage.css.map */

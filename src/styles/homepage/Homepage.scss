@@ -1,0 +1,221 @@
+@import '../variables';
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-indicators > button[type=button] {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #E0E0E0;
+}
+.carousel-indicators > button[type=button].active {
+
+    background-color: $mainGreen;
+}
+
+.sliderImgDiv {
+    // height: 100%;
+    
+    img {
+        // height: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+.taksit {
+    @include flex(space-between, center);
+    width: 90%;
+    margin: 50px auto;
+    & > div {
+        box-shadow: 0px 19px 20px rgb(191 212 178 / 78%);
+        border-radius: 10px;
+        padding: 15px;
+        background-color: #F6F6F6;
+        width: 48%;
+        @include flex(space-around,center);
+        h3 {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 15px
+        }
+        h4 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(166, 164, 164);
+            margin-bottom: 15px
+        }
+        .indiAl {
+            width: 100px;
+            height: 35px;
+            border: 1px solid  rgb(154, 154, 154);
+            border-radius: 30px;
+        }
+    }
+};
+
+//* Services ===============
+
+.services {
+    width: 90%;
+    margin: 110px auto;
+    @include flex(space-between,center);
+    & > div {
+        width: 30%;
+        @include flex(unset, center);
+        flex-direction: column;
+        border: none;
+        img {
+            width: 64px;
+            height: 66px;
+            margin-bottom: 47px;
+        }
+        h5 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 24px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+    
+}
+
+//* brends ===============
+
+
+// .brends {
+//     padding: 30px 5%;
+//     @include flex(unset,center);
+//     background: #F5F5F7;
+//     gap: 16px;
+//     & > div {
+//         padding: 0 20px;
+//         width: 176px;
+//         height: 80px;
+//         border-radius: 8px;
+//         background-color: white;
+//         @include flex(center,center)
+//     }
+// }
+.brends {
+    width: 90%;
+    margin: 0 auto;
+    .swiper {
+        width: 100%;
+        .swiper-wrapper {
+            width: 100%;
+            .swiper-slide{
+                width: 176px !important;
+                height: 80px;
+                @include flex(center,center);
+                img {
+                    width: 128px;
+                    // height: 100%;
+                    color: #aa00ff;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: '500px'){
+
+    .carousel-item {
+        height: 550px;
+    }
+    
+
+    .productsList {
+        .contents {
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            padding: 30px 20px;
+            .listContent {
+                height: 300px;
+                width: 200px;
+                .imgDiv {
+                    img {
+                        max-width: unset;
+                    }
+                }
+            }
+        }
+    }
+    
+    .taksit {
+        flex-direction: column;
+        gap: 24px;
+        & > div {
+            .productImg {
+                width: 60%;
+                
+            }
+            width: 100%;
+            h3 {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 8px
+            }
+            h4 {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: rgb(166, 164, 164);
+                margin-bottom: 8px
+            }
+            .indiAl {
+                font-size: 14px;
+                width: 80px;
+                height: 25px;
+                border: 1px solid  rgb(154, 154, 154);
+                border-radius: 25px;
+            }
+        }
+    }
+
+    //services====
+
+    .services {
+        flex-direction: column;
+        & > div {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+
+    //brends
+
+    .Homepage {
+        .brends {
+            display: none;
+        }
+    }
+
+
+}

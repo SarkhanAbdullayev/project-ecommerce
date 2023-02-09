@@ -1,0 +1,287 @@
+* {
+  color: #333333;
+}
+
+.MuiTabs-flexContainer {
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.product {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+.product .productContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+  margin-bottom: 80px;
+}
+.product .productContent .productSlider {
+  width: 48%;
+  position: relative;
+}
+
+.product .productContent .productInfo {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+.product .productContent .productInfo .productName {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 17px;
+}
+.product .productContent .productInfo .stars {
+  margin-bottom: 20px;
+}
+.product .productContent .productInfo .price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.product .productContent .productInfo .underLine {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+}
+.product .productContent .productInfo .colors {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+.product .productContent .productInfo .colors .colorsP {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F4F4F;
+}
+.product .productContent .productInfo .colors .color {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: 1px solid #E0E0E0;
+  cursor: pointer;
+}
+.product .productContent .productInfo .colors .color:focus {
+  border: 3px solid red;
+}
+.product .productContent .productInfo .roms {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.product .productContent .productInfo .roms .romsP {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F4F4F;
+}
+.product .productContent .productInfo .roms .rom {
+  padding: 8px 16px;
+  background-color: #8a8989;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
+.product .productContent .productInfo .countDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  margin-bottom: 60px;
+}
+.product .productContent .productInfo .countDiv .dec, .product .productContent .productInfo .countDiv .inc {
+  width: 32px;
+  height: 32px;
+  background-color: #F2F2F2;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
+  cursor: pointer;
+}
+.product .productContent .productInfo .countDiv .dec:active, .product .productContent .productInfo .countDiv .inc:active {
+  scale: 0.8;
+  background-color: #b1afaf;
+}
+.product .productContent .productInfo .card {
+  width: 192px;
+  height: 48px;
+  background-color: #00D68F;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 17px;
+  cursor: pointer;
+  transition: 350ms;
+  border: 2px solid #00D68F;
+}
+.product .productContent .productInfo .card .cardImg {
+  width: 18px;
+  height: 18px;
+}
+.product .productContent .productInfo .card .addToCard {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.product .productContent .productInfo .card:hover {
+  background-color: white;
+  border: 2px solid #00D68F;
+}
+.product .productContent .productInfo .card:hover .cardImg {
+  filter: invert(25%) sepia(28%) saturate(598%) hue-rotate(82deg) brightness(87%) contrast(96%);
+}
+.product .productContent .productInfo .card:hover .addToCard {
+  color: #00D68F;
+}
+
+.commentDiv {
+  border-bottom: 1px solid #BDBDBD;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 31px;
+  padding: 20px 0;
+}
+.commentDiv .raitDiv {
+  border-right: 1px solid #BDBDBD;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.commentDiv .raitDiv h2 {
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 91px;
+  color: black;
+}
+.commentDiv .commentContent {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+.commentDiv .commentContent .raitTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.commentDiv .commentContent .raitTitle h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4F4F4F;
+}
+.commentDiv .commentContent .raitTitle p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #4F4F4F;
+}
+.commentDiv .commentContent .raitRom {
+  font-size: 12px;
+  line-height: 16px;
+  color: #4F4F4F;
+  margin-bottom: 16px;
+}
+.commentDiv .commentContent .raitDescription {
+  color: #4F4F4F;
+}
+
+#loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.image-gallery-bullets .image-gallery-bullet {
+  background-color: #E0E0E0;
+  border: none;
+}
+
+.image-gallery-bullets .image-gallery-bullet:hover {
+  background-color: #E0E0E0 !important;
+  border: none;
+}
+
+.image-gallery-bullets .image-gallery-bullet.active {
+  background-color: #00D68F;
+  border: none;
+}
+
+.image-gallery-thumbnails-wrapper {
+  margin-top: 30px;
+}
+
+.image-gallery-slides {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  height: 350px;
+  padding: 0 20px;
+}
+
+.image-gallery-image {
+  height: 350px;
+}
+
+.image-gallery-right-nav .image-gallery-svg,
+.image-gallery-left-nav .image-gallery-svg {
+  width: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .image-gallery-content {
+    margin-bottom: 30px;
+  }
+  .product .productContent {
+    flex-direction: column;
+  }
+  .product .productContent .productSlider {
+    width: 100%;
+  }
+  .product .productContent .productInfo {
+    width: 100%;
+    align-items: center;
+  }
+  .commentDiv {
+    flex-direction: column;
+  }
+  .commentDiv .raitDiv {
+    border-right: none;
+    border-bottom: 1px solid gray;
+    width: 200px;
+  }
+  .commentDiv .raitDiv .stars {
+    margin-bottom: 20px;
+  }
+  .commentDiv .commentContent {
+    align-items: center;
+  }
+  .commentDiv .commentContent .raitTitle {
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  .commentDiv .commentContent .raitTitle p {
+    display: none;
+  }
+}/*# sourceMappingURL=product.css.map */

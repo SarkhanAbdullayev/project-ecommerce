@@ -1,0 +1,293 @@
+@import '../variables';
+
+* {
+    color: #333333;
+    // font-family: 'Euclid Circular A';
+}
+
+.MuiTabs-flexContainer {
+    border-bottom: 1px solid #BDBDBD;
+}
+
+
+
+.product {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    .productContent {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 3%;
+        margin-bottom: 80px;
+        .productSlider {
+            width: 48%;
+            position: relative;
+        }
+    }
+};
+
+.product {
+    .productContent {
+        .productInfo {
+            width: 48%;
+            @include flex(center,left);
+            flex-direction: column;
+            .productName {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                margin-bottom: 17px;
+            }
+            .stars {
+                margin-bottom: 20px;
+            }
+            .price {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
+            .underLine {
+                border-bottom: 1px solid #e1e1e1;
+                margin-bottom: 24px;
+            }
+            .colors {
+                @include flex(unset, center);
+                gap: 22px;
+                margin-bottom: 24px;
+                .colorsP {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #4F4F4F;
+                }
+                .color {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 100%;
+                    border: 1px solid #E0E0E0;
+                    cursor: pointer;
+                    &:focus {
+                        border: 3px solid red;
+                    }
+                }
+            }
+            .roms {
+                @include flex(left, center);
+                gap: 10px;
+                margin-bottom: 24px;
+                .romsP {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #4F4F4F;
+                }
+                .rom {
+                    padding: 8px 16px;
+                    background-color: #8a8989;
+                    border-radius: 8px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: white;
+                }
+            }
+            .countDiv {
+                @include flex(space-between, center);
+                width: 100px;
+                margin-bottom: 60px;
+                .dec, .inc {
+                    width: 32px;
+                    height: 32px;
+                    background-color: #F2F2F2;
+                    border-radius: 100%;
+                    @include flex(center,center);
+                    transition: 200ms;
+                    cursor: pointer;
+                    &:active {
+                        scale: 0.8;
+                        background-color: #b1afaf;
+                    }
+                }
+            }
+            .card {
+                width: 192px;
+                height: 48px;
+                background-color: $mainGreen;
+                border-radius: 8px;
+                color: white;
+                @include flex(center,center);
+                flex-direction: row;
+                gap: 17px;
+                cursor: pointer;
+                transition: 350ms;
+                border: 2px solid $mainGreen;
+                .cardImg {
+                    width: 18px;
+                    height: 18px;
+                }
+                .addToCard {
+                    color: white;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+                &:hover {
+                    background-color: white;
+                    // background-color: #74da9d;
+                    border: 2px solid $mainGreen;
+                    .cardImg {
+                        filter: invert(25%) sepia(28%) saturate(598%) hue-rotate(82deg) brightness(87%) contrast(96%);
+                    }
+                    .addToCard {
+                        color: $mainGreen;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.commentDiv {
+    border-bottom: 1px solid $gray4;
+    @include flex(left,center);
+    gap: 31px;
+    padding: 20px 0;
+    .raitDiv {
+        border-right: 1px solid $gray4;
+        width: 450px;
+        @include flex(space-around, center);
+        flex-direction: column;
+        h2 {
+            font-weight: 300;
+            font-size: 72px;
+            line-height: 91px;
+            color: black;
+        }
+    }
+    .commentContent {
+        @include flex(center, left);
+        flex-direction: column;
+        .raitTitle {
+            @include flex(space-between,center);
+            width: 100%;
+            h3 {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                color: $gray2;
+            }
+            p {
+                font-size: 12px;
+                line-height: 16px;
+                color: $gray2;
+            }
+        }
+        .raitRom {
+            font-size: 12px;
+            line-height: 16px;
+            color: $gray2;
+            margin-bottom: 16px;
+        }
+        .raitDescription {
+            color: $gray2;
+        }
+    }
+}
+
+#loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+
+.image-gallery-bullets .image-gallery-bullet{
+    background-color: #E0E0E0;
+    border: none;
+    
+}
+.image-gallery-bullets .image-gallery-bullet:hover{
+    background-color: #E0E0E0 !important;
+    border: none;
+    
+}
+.image-gallery-bullets .image-gallery-bullet.active{
+    background-color: $mainGreen;
+    border: none;
+}
+
+.image-gallery-thumbnails-wrapper {
+    margin-top: 30px;
+}
+
+
+.image-gallery-slides {
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    height: 350px;
+    padding: 0 20px;
+}
+
+.image-gallery-image {
+    height: 350px;
+}
+
+.image-gallery-right-nav .image-gallery-svg,
+.image-gallery-left-nav .image-gallery-svg {
+    width: 20px;
+}
+
+// .image-gallery-right-nav .image-gallery-svg > * {
+//     color: blue;
+// }
+
+@media screen and (max-width: 500px) {
+    .image-gallery-slide .image-gallery-image {
+        // height: 300px;
+    }
+
+    .image-gallery-content {
+        margin-bottom: 30px;
+    }
+
+    .product {
+        .productContent {
+            flex-direction: column;
+
+            .productSlider {
+                width: 100%;
+            }
+            .productInfo {
+                width: 100%;
+                align-items: center;
+            }
+        }
+    }
+
+    .commentDiv {
+        flex-direction: column;
+        .raitDiv {
+            border-right: none;
+            border-bottom: 1px solid gray;
+            width: 200px;
+            .stars {
+                margin-bottom: 20px;
+            }
+        }
+        .commentContent {
+            align-items: center;
+            .raitTitle {
+                justify-content: center;
+                margin-bottom: 8px;
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+}

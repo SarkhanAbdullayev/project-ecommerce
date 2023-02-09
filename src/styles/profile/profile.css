@@ -1,0 +1,325 @@
+.profile {
+  background-color: #f0f0f0;
+  min-height: 600px;
+  padding: 40px 5%;
+  gap: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.profile .sidebar {
+  padding: 32px 24px;
+  width: 255px;
+}
+.profile .sidebar .tabTitle {
+  cursor: pointer;
+}
+.profile .ordersTab {
+  width: calc(100% - 290px);
+}
+.profile .ordersTab h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4F4F4F;
+  margin-bottom: 17px;
+}
+.profile .ordersTab .ordersContent {
+  background-color: #f0f0f0;
+  min-height: 370px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.profile .ordersTab .ordersContent .order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  width: 400px;
+  height: 325px;
+  padding: 20px;
+  gap: 10px;
+}
+.profile .ordersTab .ordersContent .order .imgDiv {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.profile .ordersTab .ordersContent .order .imgDiv .orderImg {
+  max-width: inherit;
+  height: none;
+  width: 45%;
+}
+.profile .orderDetails {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 290px);
+}
+.profile .orderDetails .backToOrders {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.profile .orderDetails .backToOrders p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4F4F4F;
+}
+.profile .orderDetails #orderDetailsContent {
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px 32px;
+  margin-bottom: 100px;
+}
+.profile .orderDetails #orderDetailsContent .orderItems {
+  border-bottom: 1px solid #BDBDBD;
+  padding-left: 20px;
+  margin-bottom: 32px;
+}
+.profile .orderDetails #orderDetailsContent .orderItems .orderItem {
+  display: flex;
+  gap: 56px;
+  margin-bottom: 35px;
+}
+.profile .orderDetails #orderDetailsContent .orderItems .orderItem img {
+  width: 176px;
+}
+.profile .orderDetails #orderDetailsContent .orderItems .orderItem .itemInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+.profile .orderDetails #orderDetailsContent .orderItems .orderItem .itemInfo .countDiv .countP {
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+  margin-bottom: 4px;
+}
+.profile .orderDetails #orderDetailsContent .orderItems .orderItem .itemInfo .countDiv .count {
+  font-size: 14px;
+  line-height: 16px;
+}
+.profile .orderDetails #orderDetailsContent .orderItems .orderItem .itemInfo .orderCreatedDiv .createdP {
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+  margin-bottom: 4px;
+}
+.profile .orderDetails #orderDetailsContent .orderItems .orderItem .itemInfo .orderCreatedDiv .created {
+  font-size: 14px;
+  line-height: 16px;
+}
+.profile .orderDetails #orderDetailsContent .customerDetails {
+  display: flex;
+  border-bottom: 1px solid #BDBDBD;
+  margin-bottom: 32px;
+}
+.profile .orderDetails #orderDetailsContent .customerDetails > div {
+  width: 50%;
+}
+.profile .orderDetails #orderDetailsContent .customerDetails > div > h3 {
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.profile .orderDetails #orderDetailsContent .customerDetails > div > p {
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 16px;
+  margin-bottom: 12px;
+}
+.profile .orderDetails #orderDetailsContent .customerDetails > div .email {
+  margin-bottom: 30px;
+}
+.profile .orderDetails #orderDetailsContent .checkoutDetails {
+  border-bottom: 1px solid #BDBDBD;
+  margin-bottom: 20px;
+}
+.profile .orderDetails #orderDetailsContent .checkoutDetails .detailsTitle {
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+.profile .orderDetails #orderDetailsContent .checkoutDetails .details {
+  padding-left: 20px;
+}
+.profile .orderDetails #orderDetailsContent .checkoutDetails .details .detailsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.profile .orderDetails #orderDetailsContent .checkoutDetails .details .detailsRow h5 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282;
+}
+.profile .orderDetails #orderDetailsContent .checkoutDetails .details .detailsRow p {
+  font-weight: 500;
+}
+.profile .orderDetails #orderDetailsContent .totalPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile .orderDetails #orderDetailsContent .totalPrice .totalTitle {
+  font-weight: 500;
+}
+.profile .orderDetails #orderDetailsContent .totalPrice .total {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #DB2C66;
+}
+.profile .favoritesTab {
+  width: calc(100% - 290px);
+}
+.profile .favoritesTab h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4F4F4F;
+  margin-bottom: 17px;
+}
+.profile .favoritesTab .favoritesContent {
+  background-color: white;
+  min-height: 370px;
+  border-radius: 8px;
+}
+.profile .infoTab {
+  width: calc(100% - 290px);
+}
+.profile .infoTab h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4F4F4F;
+  margin-bottom: 17px;
+}
+.profile .infoTab .infoContent {
+  background-color: white;
+  min-height: 370px;
+  border-radius: 8px;
+}
+.profile .addressTab {
+  width: calc(100% - 290px);
+}
+.profile .addressTab h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4F4F4F;
+  margin-bottom: 17px;
+}
+.profile .addressTab .addressContent {
+  background-color: white;
+  min-height: 370px;
+  border-radius: 8px;
+}
+
+.infoTab .infoContent {
+  width: 720px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.infoTab .infoContent .information {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
+  gap: 32px;
+}
+.infoTab .infoContent .information .inputDiv {
+  width: 312px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  flex-direction: column;
+}
+.infoTab .infoContent .information .inputDiv label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F4F4F;
+  margin-bottom: 8px;
+}
+.infoTab .infoContent .information .inputDiv input {
+  width: 100%;
+  height: 48px;
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  padding: 0 16px;
+}
+.infoTab .infoContent .update {
+  width: 312px;
+  height: 48px;
+  background-color: #00D68F;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+.infoTab .infoContent .update p {
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .profile {
+    flex-direction: column;
+  }
+  .profile .sidebar {
+    width: 100%;
+  }
+  .profile .orderDetails {
+    width: 100%;
+  }
+  .profile .orderDetails #orderDetailsContent .orderItems .orderItem {
+    flex-direction: column;
+  }
+  .profile .orderDetails #orderDetailsContent .orderItems .orderItem img {
+    margin: 0 auto;
+  }
+  .profile .orderDetails #orderDetailsContent .customerDetails {
+    flex-direction: column;
+  }
+  .profile .orderDetails #orderDetailsContent .customerDetails .customer, .profile .orderDetails #orderDetailsContent .customerDetails .delivery {
+    width: 100%;
+  }
+  .profile .ordersTab {
+    width: 100%;
+  }
+  .profile .favoritesTab {
+    width: 100%;
+  }
+  .profile .infoTab {
+    width: 100%;
+  }
+  .profile .infoTab .infoContent {
+    width: 100%;
+  }
+  .profile .infoTab .infoContent .information {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+  }
+  .profile .infoTab .infoContent .information .inputDiv {
+    width: 100%;
+  }
+  .profile .infoTab .infoContent .update {
+    width: calc(100% - 64px);
+  }
+  .profile .addressTab {
+    width: 100%;
+  }
+}/*# sourceMappingURL=profile.css.map */

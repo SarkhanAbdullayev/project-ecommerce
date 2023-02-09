@@ -1,0 +1,410 @@
+@import '../variables';
+
+* {
+    .css-16r9pk3 {
+        width: 70%;
+        max-width: none !important;
+    }
+
+    .css-14sza3e-MuiStepLabel-root {
+        flex-direction: row-reverse;
+    }
+
+    .css-14yr603-MuiStepContent-root {
+        border-left: none;
+    }
+
+    .css-8t49rw-MuiStepConnector-line {
+        border: none !important;
+    }
+
+
+    .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+        fill: rgb(250, 250, 250) !important;
+        border: 1px solid #909090;
+        border-radius: 100%;
+    }
+
+    .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+        fill: rgb(255, 255, 255) !important;
+        border: 2px solid #2DD06E;
+        border-radius: 100%;
+    }
+
+    .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+        fill: #2DD06E !important;
+        border: 1px solid #2DD06E;
+        border-radius: 100%;
+    }
+
+    .css-117w1su-MuiStepIcon-text {
+        fill: #909090 !important;
+    }
+
+    .css-117w1su-MuiStepIcon-text.Mui-active {
+        fill: #2DD06E !important;
+    }
+}
+
+
+
+
+
+.checkout {
+    width: 85%;
+    margin: 0 auto;
+    @include flex(center, flex-start);
+    gap: 13%;
+    padding-top: 50px;
+    margin-bottom: 120px;
+    .box {
+        .title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            color: #1D2123;
+            // margin-bottom: 0px;
+        }
+
+        .stepper {
+            // border-top: none;
+            .step {
+                border-left: none;
+                border-top: 1px solid black;
+                .stepLabel {
+                    margin-top: 20px;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    .stepLabelTitle {
+                        @include flex(space-between, center);
+                        padding-right: 30px;
+                        margin-bottom: 24px;
+                        .edit {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: $blueLink;
+                        }
+                    }
+                }
+            }
+        }
+        .finishStep {
+            @include flex(center,center);
+            .finish {
+                width: 250px;
+                height: 48px;
+                border-radius: 8px;
+                border: 2px solid $mainGreen;
+                color: white;
+                background-color: $mainGreen;
+                transition: 400ms;
+                &:hover {
+                    color: $mainGreen;
+                    background-color: white;
+                }
+            }
+            .checkoutForm {
+                display: flex;
+                flex-direction: column;
+                background-color: $mainGreen;
+                border-radius: 8px;
+                width: 400px;
+                gap: 5px;
+                padding: 20px;
+                margin-bottom: 50px;
+                box-shadow: 0px 19px 20px rgba(89, 141, 55, 0.78);
+                label {
+                    color: white;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 20px
+                }
+                .cardNumber, .cvcInput {
+                    @include inputStyles;
+                    letter-spacing: 1.5px;
+                    transition: 350ms;
+                    // &:hover {
+                    //     scale: 1.05;
+                    // }
+                }
+                .expiryInputs {
+                    @include flex(space-between,center);
+                    .expiryMonth, .expiryYear {
+                        width: 47%;
+                        letter-spacing: 1.5px;
+                        @include inputStyles;
+                        transition: 350ms;
+                        // &:hover {
+                        //     scale: 1.05;
+                        // }
+                    }
+                }
+            }
+            .captureOrderBtn {
+                width: 250px;
+                height: 48px;
+                border-radius: 8px;
+                border: 2px solid $mainGreen;
+                background-color: $mainGreen;
+                color: white;
+                transition: 350ms;
+                margin: 0 auto;
+                box-shadow: 0px 9px 10px rgba(135, 192, 97, 0.78);
+                &:hover {
+                    background-color: white;
+                    color: $mainGreen;
+                }
+            }
+        }
+    }
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+    .total {
+        width: 25%;
+        height: 309px;
+        @include flex(space-evenly, unset);
+        flex-direction: column;
+        padding: 0 24px;
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 0px 4px 32px rgba(130, 130, 130, 0.08);
+        &>div {
+            width: 100%;
+            @include flex(space-between, center);
+            &>p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $gray1;
+            }
+        }
+        .totalH3 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            color: #1D2123;
+            text-align: left;
+        }
+
+
+        .line {
+            border-bottom: 1px solid $gray3;
+        }
+
+        .sum {
+            h5 {
+                font-weight: 500;
+            }
+
+            p {
+                font-weight: 500;
+                color: $danger;
+            }
+        }
+    }
+}
+
+.stepContent {
+    .infoForm {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        .inputDiv {
+            width: 45%;
+            min-width: 250px;
+            .label {
+                font-size: 14px;
+                line-height: 20px;
+                color: $gray2;
+                margin-bottom: 8px;
+            }
+            .input {
+                width: 100%;
+                height: 48px;
+                border-radius: 8px;
+                background-color: $gray6;
+                margin-bottom: 24px;
+                padding-left: 16px;
+            }
+            
+            .errorMsgDiv {
+                height: 0px;
+                p {
+                    position: relative;
+                    top: -20px;
+                    left: 20px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: crimson;
+                }
+            }
+        }
+    }
+    .deliveryForm {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+        margin-bottom: 52px;
+        .inputDiv {
+            width: 45%;
+            min-width: 250px;
+            .label {
+                font-size: 14px;
+                line-height: 20px;
+                color: $gray2;
+                margin-bottom: 8px;
+            }
+            .input {
+                width: 100%;
+                height: 48px;
+                border-radius: 8px;
+                background-color: $gray6;
+                margin-bottom: 24px;
+                padding-left: 16px;
+            }
+            
+            .errorMsgDiv {
+                height: 0px;
+                p {
+                    position: relative;
+                    top: -20px;
+                    left: 20px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: crimson;
+                }
+            }
+        }
+        .deliveryInputDiv {
+            width: 100%;
+            min-height: 80px;
+            margin-bottom: 40px;
+            input {
+                min-height: 80%;
+            }
+        }
+    }
+    .saveInputs {
+        width: 176px;
+        height: 48px;
+        border: 2px solid $mainGreen;
+        background-color: $mainGreen;
+        border-radius: 8px;
+        color: white;
+        transition: 350ms;
+        &:hover {
+            background-color: white;
+            color: $mainGreen;
+        }
+    }
+}
+
+.paymentContent {
+    @include flex(unset,center);
+    flex-direction: column;
+    gap: 48px;
+    .payVariants {
+        @include flex(center,center);
+        gap: 32px;
+        .cash, .card {
+            width: 248px;
+            height: 48px;
+            background-color: white;
+            border: 1px solid $gray5;
+            border-radius: 8px;
+            @include flex(space-evenly, center);
+            flex-direction: row;
+            cursor: pointer;
+            transition: 350ms;
+            & > p {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+    .confirm {
+        width: 176px;
+        height: 48px;
+        background-color: $mainGreen;
+        border: 2px solid $mainGreen;
+        border-radius: 8px;
+        color: white;
+        font-size: 14px;
+        line-height: 16px;
+        transition: 350ms;
+        &:hover {
+            background-color: white;
+            color: $mainGreen;
+        }
+    }
+}
+
+.confirmed {
+    border: 1px solid $gray3 !important;
+    background-color: $gray6 !important;
+}
+
+
+@media screen and (max-width: '500px') {
+
+    .checkout {
+        flex-direction: column;
+        .box {
+            width: 100%;
+            // max-width: 100%;
+            .stepper {
+                .step {
+                    .stepContentDiv {
+                        margin : 0;
+                        padding: 0;
+                        .saveInputs {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .total {
+            width: 100%;
+        }
+    }
+
+    .stepContent {
+        // width: 100%;
+        .infoForm {
+            .inputDiv {
+                width: 100%;
+            }
+        }
+        .deliveryForm {
+            .inputDiv {
+                width: 100%;
+            }
+        }
+    }
+    .paymentContent {
+        .payVariants {
+            flex-direction: column;
+            
+        }
+        .confirm {
+            width: 100%;
+        }
+    }
+
+    .checkout .box .finishStep .checkoutForm {
+        width: 350px;
+    }
+}
+

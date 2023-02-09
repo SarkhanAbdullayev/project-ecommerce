@@ -1,0 +1,22 @@
+@mixin flex($just, $align) {
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin inputStyles {
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-weight: 500;
+}
+
+$mainGreen :  #00D68F;
+$gray1: #333333;
+$gray2: #4F4F4F;
+$gray3: #828282;
+$gray4: #BDBDBD;
+$gray5: #E0E0E0;
+$gray6: #F2F2F2;
+$danger: #DB2C66;
+$blueLink: #2D9CDB;
