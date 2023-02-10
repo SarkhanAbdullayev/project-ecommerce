@@ -10,9 +10,6 @@
   },
   "dependencies": {
     "@chec/commerce.js": "^2.8.0",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@mui/lab": "^5.0.0-alpha.114",
     "@reduxjs/toolkit": "^1.9.1",
     "axios": "^1.2.1",
     "bootstrap": "^5.2.3",
