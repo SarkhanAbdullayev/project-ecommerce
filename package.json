@@ -10,6 +10,10 @@
   },
   "dependencies": {
     "@chec/commerce.js": "^2.8.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.8",
+    "@mui/styled-engine-sc": "^5.11.0",
     "@reduxjs/toolkit": "^1.9.1",
     "axios": "^1.2.1",
     "bootstrap": "^5.2.3",
@@ -30,6 +34,7 @@
     "react-tabs-navigation": "^0.4.4",
     "slick-carousel": "^1.8.1",
     "smart-webcomponents-react": "^14.4.0",
+    "styled-components": "^5.3.6",
     "swiper": "^8.4.5"
   },
   "devDependencies": {
