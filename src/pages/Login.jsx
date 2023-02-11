@@ -34,7 +34,7 @@ const Login = () => {
 
         const body = {
             email,
-            base_url: 'http://127.0.0.1:5173/login/logged',
+            base_url: '/https://tello.netlify.app/login/logged',
         }
         
         fetch(url, {
