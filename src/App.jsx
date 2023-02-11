@@ -27,7 +27,7 @@ function App() {
     <div className="App">
 
       <Routes>
-        <Route path='https://tello.netlify.app' element={<Layout />}>
+        <Route path='/' element={<Layout />}>
           <Route index element={<Homepage />} />
           <Route path='/products' element={<Products />} />
           <Route path='/products/:product' element={<Product />} />
