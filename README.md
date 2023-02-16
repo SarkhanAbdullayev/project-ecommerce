@@ -4,7 +4,7 @@ To see the project click https://tello.netlify.app/
 
 Designed and implemented user interfaces using React Js framework .
 
-or backend I used commercejs.com .
+For backend I used commercejs.com .
 
 Responsive design for laptops and mobile devices .
 
