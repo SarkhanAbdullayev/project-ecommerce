@@ -45,8 +45,8 @@ class BootstrapCarouselComponent extends React.Component {
                             <h2 className="text-2xl md:text-5xl font-bold mb-4 text-center md:text-left">{el.title}</h2>
                             <p className="text-center md:text-left">{el.description}</p>
                         </div>
-                        <div className="sliderImgDiv w-12/12 md:w-5/12 my-auto">
-                            <img src={el.url} alt="" />
+                        <div className="sliderImgDiv w-12/12 md:w-5/12 my-auto h-full">
+                            <img className="h-full" src={el.url} alt="" />
                         </div>
                     </div>
                 </Carousel.Item>
